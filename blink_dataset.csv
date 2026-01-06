@@ -1,2 +1,0 @@
-SubjectID,Age,Gender,TaskType,BlinkFreq,TotalBlink,AvgBlinkDuration,TotalBlinkDuration,InterBlinkMean,InterBlinkSTD,BlinkVariance,TaskDuration,ResponseTime,AttentionScore,Label
-S001,12,male,Reading,29.233,52,0.295,15.333,1.876,3.492,12.197,106.73,1.876,0.033,Dyslexia/Dyscalculia
