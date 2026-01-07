@@ -26,7 +26,7 @@ class Dashboard(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Dashboard")
-        self.resize(600, 400)
+        self.resize(700, 600)
 
         # Central content
         container = QWidget()

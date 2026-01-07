@@ -34,7 +34,7 @@ class ModulesWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Modules")
-        self.setMinimumSize(600, 500)
+        self.setMinimumSize(700, 600)
 
         # Main layout
         main_layout = QVBoxLayout()
@@ -59,7 +59,7 @@ class ModulesWindow(QMainWindow):
         grid_layout = QGridLayout(card_container)
         
         # Sample Module Names
-        module_names = ["Analytics", "Inventory", "Users", "Settings", "Reports", "Help"]
+        module_names = ["Reading", "Mathematic", "Scenario Description",]
         
         # Create a 2x3 Grid
         rows = 2

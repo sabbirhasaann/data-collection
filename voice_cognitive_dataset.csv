@@ -1,0 +1,11 @@
+ID , Age, Lang   , Dyslexia%, Math%, Label              , Date
+101,  10, English,     31.03, 88.89, Risk: Dyslexia     , 2026-01-06 10:33
+101,  10, English,     98.25,  8.33, Risk: Dyscalculia  , 2026-01-06 10:33
+101,  10, English,     59.26, 24.00, High Risk: Both    , 2026-01-06 10:34
+101,  10, English,     45.71, 76.92, Risk: Dyslexia     , 2026-01-06 10:35
+101,  10, English,     92.86, 88.89, Normal Performance , 2026-01-06 10:35
+101,  10, Bangla ,     50.91, 43.48, High Risk: Both    , 2026-01-06 10:36
+101,  10, Bangla ,     20.00, 36.36, High Risk: Both    , 2026-01-06 10:36
+102,  09, Bangla ,      7.59, 25.00, High Risk: Both    , 2026-01-06 10:40
+103,   9, Bangla ,     42.86,  8.33, High Risk: Multiple, 2026-01-06 11:12
+103,   9, Bangla ,     59.09,  9.09, High Risk: Multiple, 2026-01-06 11:13

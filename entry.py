@@ -10,7 +10,7 @@ class EntryWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Candidate Entry")
-        self.setMinimumSize(500, 400)
+        self.setMinimumSize(700, 600)
 
         # Main Layout
         main_layout = QVBoxLayout()

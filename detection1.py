@@ -43,8 +43,7 @@ class CognitiveVoiceApp:
 
     # ---------- FORM ----------
     def build_form(self):
-        tk.Label(self.root, text="Cognitive Voice Screening",
-                 font=("Helvetica",24,"bold")).pack(pady=20)
+        tk.Label(self.root, text="Cognitive Voice Screening",font=("Helvetica",24,"bold")).pack(pady=20)
 
         self.sid = self.entry("Subject ID")
         self.age = self.spin("Age (6-11)",6,11)
@@ -53,8 +52,7 @@ class CognitiveVoiceApp:
         self.task_label = tk.Label(self.root, font=("Helvetica",18), fg="blue")
         self.task_label.pack(pady=20)
 
-        ttk.Button(self.root, text="🎤 Start Recording",
-                   command=self.start_recording).pack(pady=10)
+        ttk.Button(self.root, text="🎤 Start Recording",command=self.start_recording).pack(pady=10)
 
         self.output = tk.Text(self.root, height=12, font=("Helvetica",12))
         self.output.pack(fill="both", padx=20)
@@ -97,9 +95,7 @@ class CognitiveVoiceApp:
 
     # ---------- DYSLEXIA ----------
     def dyslexia_test(self):
-        sentence = random.choice(
-            bn_sentences if self.lang.get()=="Bangla" else en_sentences
-        )
+        sentence = random.choice(bn_sentences if self.lang.get()=="Bangla" else en_sentences)
 
         self.task_label.config(text=f"Read aloud:\n{sentence}")
         self.output.insert(tk.END,f"\nReading Task:\n{sentence}\n")
@@ -174,9 +170,13 @@ class CognitiveVoiceApp:
             w = csv.writer(f)
             if new:
                 w.writerow([
-                    "SubjectID","Age","Language",
-                    "DyslexiaScore","DyscalculiaScore",
-                    "FinalLabel","Time"
+                    "SubjectID",
+                    "Age",
+                    "Language",
+                    "DyslexiaScore",
+                    "DyscalculiaScore",
+                    "FinalLabel",
+                    "Time"
                 ])
             w.writerow([
                 self.sid.get(), self.age.get(), self.lang.get(),
